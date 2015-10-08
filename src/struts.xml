@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+  
+<package name="default" extends="struts-default">  
+
+<action name="login" >  
+<result >Home.jsp</result> 
+</action>  
+   
+<action name="profile" class="login.LoginAction">  
+<result name="success">result.jsp</result> 
+<result name="error" >error.jsp</result>  
+</action>  
+
+<action name="logout" class="login.LoginAction" method="logout">  
+<result name="success">FirstScreen.jsp</result> 
+
+</action>  
+
+<action name="profilePage" class="login.Profile">  
+<result name="success">result.jsp</result> 
+<result name="error" >error.jsp</result>  
+</action>  
+
+<action name="EntryValidator" class="maker.actions.addNCustomer"> 
+<result name="success">result.jsp</result>  
+<result name="error" >error.jsp</result>  
+ 
+</action>  
+
+<action name="approve" class="checker717.accept"> 
+<result name="success">/CtempMainPage.jsp</result>  
+<result name="error">/error.jsp</result>  
+</action>  
+
+<action name="reject" class="checker717.reject"> 
+<result name="success">/result.jsp</result>  
+<result name="error">/error.jsp</result>  
+</action>  
+<action name="delete" class="maker.actions.modification"> 
+<result name="success">/result.jsp</result>  
+<result name="error">/error.jsp</result>  
+</action>  
+<action name="edit" class="maker.actions.modification"> 
+<result name="success">/result.jsp</result>  
+<result name="error">/error.jsp</result>  
+</action>  
+
+<!-- 
+<action name="login1" class="login.LoginAction">  
+<result name="checker">checker.jsp</result>  
+<result name="maker">Maker.jsp</result>  
+<result name="error" >loginerror.jsp</result>  
+<result name="input">index.jsp</result>  
+</action>  
+
+
+
+<action name="maker" class="maker.actions.makeraction">  
+<result name="add">addcustomer.jsp</result>  
+<result name="search">searchM.jsp</result>   
+<result name="viewall">viewAll.jsp</result>  
+<result name="delete">del.jsp</result>  
+<result name="error">errorlog.jsp</result>  
+<result name="modify">del.jsp</result> 
+</action>  
+
+
+
+
+
+<action name="searchBC" class="maker.actions.searchBC"> 
+<result name="success">retrieve.jsp</result>  
+<result name="error" >loginerror.jsp</result>  
+<result name="input">addcustomer.jsp</result>  
+</action>  
+
+<action name="viewAll" class="maker.actions.viewAllBC"> 
+<result name="success">retrieve.jsp</result>  
+<result name="error" >loginerror.jsp</result>  
+<result name="input">addcustomer.jsp</result>  
+</action>  
+
+<action name="deleteBC" class="maker.actions.deleteBC"> 
+<result name="success">success.jsp</result>  
+<result name="error" >loginerror.jsp</result>  
+<result name="input">addcustomer.jsp</result>  
+</action>  
+
+
+<action name="deleteAll" class="maker.actions.viewAllBC">
+<result name="success">delete.jsp</result>
+<result name="error">/loginerror.jsp</result>
+</action>
+
+<action name="del" class="maker.actions.Delete">
+<result name="success">/welcome.jsp</result>
+<result name="error">/errorPage.jsp</result>
+</action>
+
+
+
+<action name="update" class="maker.actions.Updates">
+<result name="success">/edit.jsp</result>
+<result name="error">/errorPage.jsp</result>
+</action>
+
+
+<action name="up" class="maker.test.update">
+<result name="success">/edit.jsp</result>
+<result name="error">/errorPage.jsp</result>
+</action> 
+
+<action name="modify" class="maker.actions.Updates">
+<result name="success">/welcome.jsp</result>
+<result name="error">/errorPage.jsp</result>
+</action> 
+
+<action name="viewTemp" class="maker.actions.viewAllBC">
+<result name="success">Ctemp.jsp</result>
+<result name="error">/errorPage.jsp</result>
+</action> 
+ -->
+
+</package>  
+</struts>     

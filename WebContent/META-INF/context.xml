@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+ <Context >
+ 
+     <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    
+   <Resource name="jdbc/testDB" auth="Container"
+        type="javax.sql.DataSource"
+        maxActive="100" maxIdle="30" maxWait="10000"
+        username="hr" 
+        password="hr"
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+          url="jdbc:oracle:thin:@finn:1521:orcl"/>
+</Context>
+
+
